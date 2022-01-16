@@ -16,7 +16,13 @@
       <div class="card">
         <div class="card-body">
           <h5 class="card-title">Play The Fibonacci Game</h5>
-          <p class="card-text">Rules: Quickly enter as many non-fibonacci numbers as you can</p>
+          <div class="card-text">Rules: 
+            <ul>
+              <li>Start the timer</li>
+              <li>Quickly enter as many non-fibonacci numbers as you can</li>
+              <li>Each Fibonacci number you enter will slow you down by displaying an alert box!</li>
+            </ul>
+          </div>
           
 
           <div class="row">
@@ -34,9 +40,19 @@
           </div>
 
           <form class="mt-2">
-            <input type="number" class="form-control" id="userNumberInput" placeholder="Enter number">
+            <div class="input-group">
+              <input type="number" class="form-control" id="userNumberInput" placeholder="Enter number" #currentNumber>
+              <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="button" (click)="selectNumber(currentNumber.value)">Submit Number</button>
+              </div>
+            </div>
+            
+
+            <pre>{{ allSelectedNumbers | json }}</pre>
+            
+            
           </form>
-            {{ counter }}
+
         </div>
       </div>
 
