@@ -1,3 +1,13 @@
+This is a practice repo for learning Angular9
+
+
+1. The functionality of this game is sound, and would easily be migrated to a different user interface.
+2. This application is essentially "Production Ready" and you can view a live demo here
+3. This coding challenge was an interesting concept due to the unexpected problem of solving a computationally difficult fibonacci function, but would benefit from more clear wording on the instructions.
+
+
+
+
 # FibonacciGame
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.3.
