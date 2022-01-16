@@ -15,7 +15,7 @@
       
       <div class="card">
         <div class="card-body">
-          <h5 class="card-title">Play The Fibonacci Game</h5>
+          <h5 class="card-title" id="playTitle">Play The Fibonacci Game</h5>
           <div class="card-text">Rules: 
             <ul>
               <li>Start the timer</li>
@@ -43,7 +43,7 @@
             <div class="input-group">
               <input type="number" class="form-control" id="userNumberInput" placeholder="Enter number" #currentNumber>
               <div class="input-group-append">
-                <button class="btn btn-outline-secondary" type="button" (click)="selectNumber(currentNumber.value)">Submit Number</button>
+                <button class="btn btn-outline-secondary" type="button" id="submitButton" (click)="selectNumber(currentNumber.value)">Submit Number</button>
               </div>
             </div>
             
